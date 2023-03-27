@@ -1,0 +1,32 @@
+.main{
+    background: #ca498c;
+    
+}
+.pg_wmn{
+    width:100%;
+    height: auto;
+}
+.video{
+    padding-left: 3rem;
+    padding-top: 3rem;
+}
+ .towers{
+
+height: 100%;
+position: relative;
+
+}
+.tower_icon{
+   background-color: aliceblue;
+   height: 380px;
+   width: 50%;
+   margin-top: 200px;
+} 
+.msg{
+    padding: 1em;
+}
+
+.btn{
+    margin-top: 20px;
+    background-color: aquamarine;
+}

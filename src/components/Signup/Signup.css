@@ -1,0 +1,55 @@
+.login_btn
+{
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgb(0 0 0 / 15%) 0 3px 5px -1px, rgb(0 0 0 / 10%) 0 6px 10px 0, rgb(0 0 0 / 8%) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 60px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 1;
+    margin-left: 70px;
+
+}
+.login_btn:hover {
+    background: #F6F9FE;
+    color: #174ea6;
+}
+.validators{
+    color: #990000;
+    font-size: 15px;
+    padding-left: 10px;
+    display: none;
+}
+input:invalid ~ span{
+    display:block;
+} 
+.inputtext{
+    border-radius: 8px;
+    padding: 8px 70px;
+    width: 100%;
+    
+}
