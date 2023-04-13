@@ -1,0 +1,15 @@
+.containerabout{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(192, 223, 250);
+}
+.h1{
+    padding-left: 35px;
+    padding-top: 50px;
+    
+}
+.pcn{
+    padding-left: 20px;
+    padding-right: 25px;
+    padding-top: 20px;
+}

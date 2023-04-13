@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import {Row,Col,Form} from 'react-bootstrap';
 import {MDBBtn,MDBContainer, MDBCard,MDBCardBody,MDBInput,MDBCheckbox}from 'mdb-react-ui-kit';
 import { FirebaseContext } from '../../store/FirebaseContext';
-import { useHistory } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import { createUserWithEmailAndPassword, updateCurrentUser } from 'firebase/auth'; 
 import { auth , db} from '../../Firebase/config';
 import { setDoc,doc} from "firebase/firestore"
@@ -46,11 +46,11 @@ function Signup() {
     <div>
 
     <Row>
-    <Col className='first-section vh-100'></Col>
+   
     <Col className='second-section'>
     <MDBContainer fluid className='d-flex align-items-center justify-content-center bg-image' >
       <div className='mask gradient-custom-3'></div>
-      <MDBCard className=' ' style={{borderRadius: '1rem',maxWidth: '600px',marginTop:'120px'}}>
+      <MDBCard className=' ' style={{borderRadius: '2.5rem',maxWidth: '600px',marginTop:'120px',boxShadow:'30px 14px 42px #ffa6c9 '}}>
         <MDBCardBody className='px-5'>
           <h2 className="text-uppercase text-center mt-5 mb-4 "style={{fontSize:'1.5em'}}>Create an account</h2>
           <Form onSubmit={signIn} >
@@ -66,12 +66,15 @@ function Signup() {
           <div className='d-flex flex-row justify-content-center mb-4'>
             <MDBCheckbox name='flexCheck' id='flexCheckDefault' label='I agree all statements in Terms of service' />
           </div>
-          <button className='login_btn' onClick={signIn}>Register</button>
+          <button className='login_btn' onClick={signIn}><Link to ></Link>Register</button>
           </Form>
         </MDBCardBody>
       </MDBCard>
     </MDBContainer>
    
+    </Col>
+    <Col className='vh-100 d-flex justify-content-center  align-items-center '>
+    <img  className='male_femaleimg  'src={process.env.PUBLIC_URL + "/male-female-symbols.jpg"} />
     </Col>
     </Row>
     </div>

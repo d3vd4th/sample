@@ -48,16 +48,13 @@ function Login_otp() {
   return (
     <div>
     <Row>
-    <Col className='first-section vh-100'>
-    
-    </Col>
-    <Col className='second-section'>
+    <Col className='second-section vh-100'>
     <MDBContainer fluid>
 
       <MDBRow className='d-flex justify-content-center align-items-center h-100'>
         <MDBCol col='12'>
 
-          <MDBCard className=' text-dark  mx-auto' style={{borderRadius: '1rem', maxWidth: '380px',background:'#fff',marginTop:'130px',}}>
+          <MDBCard className=' text-dark  mx-auto' style={{borderRadius: '2.5rem', maxWidth: '380px',background:'#fff',marginTop:'130px',boxShadow:'30px 14px 42px #ffa6c9 '}}>
             <MDBCardBody className='p-5 d-flex flex-column align-items-center mx-auto w-100 '>
 
               <h2 className=" mb-2 text-uppercase">Login</h2>
@@ -86,6 +83,10 @@ function Login_otp() {
       </MDBRow>
 
     </MDBContainer>
+    </Col>
+    <Col className='vh-100 d-flex justify-content-center  align-items-center'>
+    
+    <img  className='male_femaleimg  'src={process.env.PUBLIC_URL + "/male-female-symbols.jpg"} />
     </Col>
     </Row>
     </div>

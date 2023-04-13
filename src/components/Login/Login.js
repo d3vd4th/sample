@@ -1,5 +1,5 @@
 import React  from 'react';
-import {Link,useHistory}from 'react-router-dom'
+import {Link,useHistory,Redirect}from 'react-router-dom'
 import './Login.css';
 import "bootstrap/dist/css/bootstrap.min.css"; 
 import {Row,Col} from 'react-bootstrap';
@@ -17,6 +17,7 @@ function Login() {
   const {firebase}   =useContext(FirebaseContext)
   const [formErrors,setFormErrors]= useState({})
   const [isSubmit,setisSubmit]= useState(false)
+   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const history=useHistory()
   const logIn = async(e,)=>{
     e.preventDefault()
@@ -24,11 +25,22 @@ function Login() {
     setisSubmit(true)
     
     const user = await signInWithEmailAndPassword(auth,email,password)
-    .then(()=>{history.push('/home')
+    // console.log(user)
+    
+  //  user ?  setIsAuthenticated(true): alert("invalid credintials")
+  //  if(isAuthenticated){history.push('/home')}
+  //   if (isAuthenticated) {
+  //     return <Redirect to="/home"/>;
+  //}
+  
+    .then(()=>{
+      history.push('/home')
     })
     .catch((error)=>{ alert(error.message)
     })
-    console.log(auth?.currentUser)  
+  
+ 
+    
   }
 
   useEffect(()=>{

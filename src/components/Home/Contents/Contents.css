@@ -1,5 +1,5 @@
 .main{
-    background: #ca498c;
+    background: #fff;
     
 }
 .pg_wmn{
@@ -27,6 +27,174 @@ position: relative;
 }
 
 .btn{
-    margin-top: 20px;
-    background-color: aquamarine;
+   
+    background-color: #CDE3CF;
+    margin-left: 40.5em;
+  
+}
+.btn:hover{
+    background-color:     #9FB9A1    ;
+}
+.pngwing1{
+    width: 220px;
+    height: 320px;
+    margin-top: 100px;
+    margin-left: 444px;
+    /* box-shadow:30px 14px 42px #ffa6c9; */
+}
+.logoimg1{
+    height:20em;
+    width: 20em;
+}
+.typing{
+   outline: none;
+   border-top-style: hidden;
+   border-right-style: hidden;
+   border-left-style: hidden;
+   border-color: #E5E4E2;
+    width: 50%;
+   height: 5em;
+   
+  
+}
+.img2{
+    margin-left: 200px;
+    margin-top: px;
+}
+.col1{
+    width: 50%;
+    
+}
+/* .file{
+    position: relative;
+    top: ;
+    font-family: calibri;
+    width: 150px;
+    padding: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border: 1px dashed #BBB;
+    text-align: center;
+    background-color: #DDD;
+    cursor: pointer;
+} */
+.maindiv{
+    height: 1em;
+    width: 59em;
+    
+}
+.imgdiv{
+    height:15em;
+    width:20em;
+    float: left;
+    
+    
+}
+.msgdiv{
+    height:10em;
+    width:56em; 
+   
+    
+    padding-top: 3px;
+}
+.img{
+    box-shadow:20px 17px 42px #E5E4E2;
+}
+.msg{
+    font-weight: bold;
+    
+}
+.date{
+    font-size: 13px;
+    width: 20em;  
+    margin-left: 50em;
+    margin-bottom: 2em;
+    
+}
+.logo{
+    color: black;
+    margin-top: 200px;
+    
+}
+input[type=file]::file-selector-button {
+    margin-right: 20px;
+    border: none;
+    background:  #CDE3CF;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color:black;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+  }
+  
+  input[type=file]::file-selector-button:hover {
+    background: #9FB9A1;
+  }
+  .container1{
+    height: 400px;
+    width:100%
+  }
+  .logoimg{
+    height:400px;
+    width:50%;
+    float: left;
+    background-color: aliceblue;
+    
+  }
+  .wmndiv{
+    height:400px;
+    width:50%;
+    float: left;
+    background-color: aliceblue;
+  }
+  .allcare{
+    margin-top: 2.8em;
+    margin-left: 4em;
+    color: #ff99cc;
+    font-size: 50px;
+    float: left;
+  }
+  .atoneplace{
+    margin-top: -px;
+    margin-left: 4em;
+    font-size: 50px;
+    color:#e60072;
+    font-weight: bold;
+    float: left;
+
+  }
+  /* .leftlogo{
+    padding-bottom: 100px;
+    height: 300px;
+    width: 200px;
+
+  }
+  .leftlogodiv{
+    height:500px;
+    width: 500px;
+    margin-left: 20em;
+   margin-top: 243px;
+  } */
+.navbar_nav1{
+padding-left: 60px;
+
+}
+.contentdiv{
+  background-color: #ffd7e9;
+}
+.retrievecard{
+    background-color:#ffd7e9 ;
+}
+.nav1{
+    background-color: aliceblue;
+    
+    
+}
+.navbar_nav2{
+    font-weight: bold;
+    
+    
+}
+.navbar_nav2:hover{
+    transform: scale(1.08);
 }

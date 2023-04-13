@@ -1,11 +1,13 @@
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Redirect, Route, } from "react-router-dom";
+
 
 
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import Home from "./pages/Home";
-import { useContext, useEffect } from "react";
+import About from "./pages/About";
+import { useContext, useEffect,useState} from "react";
 import { AuthContext, FirebaseContext } from "./store/FirebaseContext";
 import { onAuthStateChanged } from "firebase/auth";
 import Login_otp from "./components/Login/Login_otp";
@@ -31,8 +33,12 @@ function App() {
          <Route path='/signup'>
          <Signup/>
          </Route>
+        
          <Route path='/home'>
          <Home/>
+         </Route>
+         <Route path='/about'>
+         <About/>
          </Route>
          </Router>
         
